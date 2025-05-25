@@ -1,8 +1,26 @@
 
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { useState, useEffect } from "react";
 
 const Index = () => {
+  const [typewriterText, setTypewriterText] = useState("");
+  const fullText = "Creative Designer & Developer";
+  
+  useEffect(() => {
+    let index = 0;
+    const timer = setInterval(() => {
+      if (index < fullText.length) {
+        setTypewriterText(fullText.slice(0, index + 1));
+        index++;
+      } else {
+        clearInterval(timer);
+      }
+    }, 100);
+
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <div className="min-h-screen bg-white font-mono">
       {/* Navigation */}
@@ -27,9 +45,8 @@ const Index = () => {
             <div className="space-y-8 animate-fade-in">
               <div className="space-y-4">
                 <h2 className="text-5xl lg:text-6xl font-light text-black leading-tight">
-                  Creative
-                  <span className="block text-black font-medium">Designer</span>
-                  <span className="block text-gray-600">& Developer</span>
+                  <span className="block text-black font-medium">{typewriterText}</span>
+                  <span className={`inline-block w-0.5 h-16 bg-black ml-1 ${typewriterText.length === fullText.length ? 'animate-pulse' : ''}`}></span>
                 </h2>
                 <p className="text-xl text-gray-600 leading-relaxed max-w-lg">
                   I craft digital experiences that blend beautiful design with seamless functionality. 
