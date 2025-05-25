@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useState, useEffect } from "react";
@@ -54,11 +55,11 @@ const Index = () => {
                   </p>
                   {/* Photo positioned to the right of subtitle */}
                   <div className="relative animate-scale-in">
-                    <Card className="relative overflow-hidden rounded-none shadow-lg hover:shadow-xl transition-all duration-500">
+                    <Card className="relative overflow-hidden rounded-none shadow-lg hover:shadow-xl transition-all duration-500 transform rotate-[35deg]">
                       <img 
                         src="/lovable-uploads/3145a330-3acc-47f7-a452-c114930fdcb5.png"
                         alt="Personal photo"
-                        className="w-64 h-80 object-cover"
+                        className="w-48 h-auto object-contain"
                       />
                     </Card>
                   </div>
