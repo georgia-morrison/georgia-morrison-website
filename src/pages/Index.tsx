@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useState, useEffect } from "react";
@@ -40,7 +39,7 @@ const Index = () => {
       {/* Hero Section */}
       <section className="pt-24 pb-20 px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
             {/* Text Content */}
             <div className="space-y-8 animate-fade-in">
               <div className="space-y-4">
@@ -48,10 +47,22 @@ const Index = () => {
                   <span className="block text-black font-medium">{typewriterText}</span>
                   <span className={`inline-block w-0.5 h-16 bg-black ml-1 ${typewriterText.length === fullText.length ? 'animate-pulse' : ''}`}></span>
                 </h2>
-                <p className="text-xl text-gray-600 leading-relaxed max-w-lg">
-                  I craft digital experiences that blend beautiful design with seamless functionality. 
-                  Passionate about creating meaningful connections through thoughtful design.
-                </p>
+                <div className="flex items-start gap-8">
+                  <p className="text-xl text-gray-600 leading-relaxed max-w-lg flex-1">
+                    I craft digital experiences that blend beautiful design with seamless functionality. 
+                    Passionate about creating meaningful connections through thoughtful design.
+                  </p>
+                  {/* Photo positioned to the right of subtitle */}
+                  <div className="relative animate-scale-in">
+                    <Card className="relative overflow-hidden rounded-none shadow-lg hover:shadow-xl transition-all duration-500">
+                      <img 
+                        src="/lovable-uploads/3145a330-3acc-47f7-a452-c114930fdcb5.png"
+                        alt="Personal photo"
+                        className="w-64 h-80 object-cover"
+                      />
+                    </Card>
+                  </div>
+                </div>
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4">
@@ -80,29 +91,8 @@ const Index = () => {
               </div>
             </div>
 
-            {/* Photo */}
-            <div className="relative animate-scale-in">
-              <div className="relative">
-                <Card className="relative overflow-hidden rounded-none shadow-lg hover:shadow-xl transition-all duration-500">
-                  <img 
-                    src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=600&h=800&fit=crop&crop=face"
-                    alt="Alex Morgan - Creative Designer & Developer"
-                    className="w-full h-[600px] object-cover"
-                  />
-                </Card>
-              </div>
-              
-              {/* Floating Elements */}
-              <div className="absolute -top-6 -right-6 bg-white border border-gray-200 p-4 shadow-lg">
-                <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                <div className="text-xs text-gray-600 mt-1">Available</div>
-              </div>
-              
-              <div className="absolute -bottom-6 -left-6 bg-white border border-gray-200 p-4 shadow-lg">
-                <div className="text-sm font-medium text-black">Based in</div>
-                <div className="text-xs text-gray-600">San Francisco, CA</div>
-              </div>
-            </div>
+            {/* Empty space for balance */}
+            <div></div>
           </div>
         </div>
       </section>
