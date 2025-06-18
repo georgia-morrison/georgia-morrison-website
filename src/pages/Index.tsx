@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   const [typewriterText, setTypewriterText] = useState("");
@@ -29,7 +30,7 @@ const Index = () => {
           <div className="flex justify-between items-center">
             <h1 className="text-xl font-semibold text-black">Alex Morgan</h1>
             <div className="hidden md:flex space-x-8">
-              <a href="#about" className="text-gray-600 hover:text-black transition-colors">About</a>
+              <Link to="/about" className="text-gray-600 hover:text-black transition-colors">About</Link>
               <a href="#work" className="text-gray-600 hover:text-black transition-colors">Work</a>
               <a href="#contact" className="text-gray-600 hover:text-black transition-colors">Contact</a>
             </div>
