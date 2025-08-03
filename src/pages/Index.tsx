@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { Progress } from "@/components/ui/progress";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
@@ -37,6 +38,11 @@ const Index = () => {
           </div>
         </div>
       </nav>
+
+      {/* Progress Bar */}
+      <div className="fixed top-[73px] left-0 right-0 z-40">
+        <Progress value={50} className="h-1 rounded-none" />
+      </div>
 
       {/* Hero Section */}
       <section className="pt-24 pb-20 px-6">
