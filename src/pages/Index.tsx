@@ -40,11 +40,6 @@ const Index = () => {
         </div>
       </nav>
 
-      {/* Progress Bar */}
-      <div className="fixed top-[73px] left-0 right-0 z-40">
-        <Progress value={50} className="h-1 rounded-none" />
-      </div>
-
       {/* Hero Section */}
       <section className="pt-40 pb-20 px-6">
         <div className="max-w-6xl mx-auto">
