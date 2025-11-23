@@ -99,3 +99,19 @@
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes bounce-slow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+.animate-bounce-slow {
+  animation: bounce-slow 2.5s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+.animate-blink {
+  animation: blink 1s steps(2, start) infinite;
+}
