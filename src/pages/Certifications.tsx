@@ -5,6 +5,14 @@ import { Badge } from "@/components/ui/badge";
 const Certifications = () => {
   const certifications = [
     {
+      title: "Code In Place",
+      issuer: "Stanford University",
+      date: "2025",
+      skills: ["Python", "Problem Solving", "Coding Fundamentals"],
+      status: "Active",
+      image: "/cert-images/stanford.png"
+    },
+    {
       title: "AWS Cloud Practitioner",
       issuer: "Amazon Web Services",
       date: "2025",
