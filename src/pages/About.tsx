@@ -80,7 +80,7 @@ const About = () => {
                 <h3 className="text-xl font-semibold text-black mb-4">Current Role</h3>
                 <div className="space-y-4">
                   <div className="border-l-2 border-gray-200 pl-4">
-                    <div className="font-medium text-black">Technology Graduate Engineer @ Amex</div>
+                    <div className="font-medium text-black">Software Engineer 1 @ Amex</div>
                     <div className="text-sm text-gray-600">Sep 2024 - Present</div>
                     <div className="text-sm text-gray-600 mt-1">Building AIOps solutions for our ever-growing incident management needs.</div>
                   </div>
