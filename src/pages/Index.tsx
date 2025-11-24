@@ -30,11 +30,11 @@ const Index = () => {
           <div className="flex justify-between items-center">
             <h1 className="text-xl font-semibold text-black">Georgia Morrison</h1>
             <div className="hidden md:flex space-x-8">
-              <Link to="/about" className="text-gray-600 hover:text-black transition-colors">About</Link>
-              <Link to="/cv" className="text-gray-600 hover:text-black transition-colors">CV</Link>
-              <Link to="/projects" className="text-gray-600 hover:text-black transition-colors">Projects</Link>
-              <Link to="/certifications" className="text-gray-600 hover:text-black transition-colors">Certifications</Link>
-              <Link to="/contact" className="text-gray-600 hover:text-black transition-colors">Contact</Link>
+              <Link to="./about" className="text-gray-600 hover:text-black transition-colors">About</Link>
+              <Link to="./cv" className="text-gray-600 hover:text-black transition-colors">CV</Link>
+              <Link to="./projects" className="text-gray-600 hover:text-black transition-colors">Projects</Link>
+              <Link to="./certifications" className="text-gray-600 hover:text-black transition-colors">Certifications</Link>
+              <Link to="./contact" className="text-gray-600 hover:text-black transition-colors">Contact</Link>
             </div>
           </div>
         </div>
@@ -62,12 +62,12 @@ const Index = () => {
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link to="/projects">
+                <Link to="./projects">
                   <Button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full">
                     View My Work
                   </Button>
                 </Link>
-                <Link to="/contact">
+                <Link to="./contact">
                   <Button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full">
                     Get In Touch
                   </Button>
@@ -151,7 +151,7 @@ const Index = () => {
         <div className="max-w-4xl mx-auto">
           <h4 className="text-2xl font-light text-white mb-4">Let's work together</h4>
           <p className="text-slate-400 mb-8">Ready to bring your ideas to life?</p>
-          <Link to="/contact">
+          <Link to="./contact">
             <Button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full">
               Get In Touch
             </Button>
